@@ -9,6 +9,7 @@ import {
 } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { Link } from "react-scroll";
+import ResumePDF from "../../ResumePDF/My resume.pdf";
 
 const NavBar = () => {
   let [nav, setNav] = useState(false);
@@ -137,7 +138,7 @@ const NavBar = () => {
 
           <li className="w-36 h-8 flex justify-between items-center ml-[-6.25rem] hover:ml-[-0.625rem] duration-300 bg-[#12434670] BORDER">
             <a
-              href="../ResumePDF/My resume.pdf"
+              href={ResumePDF}
               className="flex justify-between items-center text-white w-full"
               target="_blank"
             >
