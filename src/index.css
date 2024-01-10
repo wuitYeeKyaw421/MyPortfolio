@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Questrial&family=REM:wght@200&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,500&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Signika+Negative:wght@600&display=swap");
+
+@layer base {
+  li {
+    @apply px-4 cursor-pointer;
+  }
+}
+
+@layer components {
+  .GRID_CONTAINER {
+    @apply max-w-[63rem] w-full grid grid-cols-2 gap-8;
+  }
+
+  .BORDER_BOTTOM {
+    @apply border-b-[1px] border-[tomato];
+  }
+
+  .HEADER_UNDERLINE {
+    @apply text-4xl font-bold inline border-b-4 border-[tomato];
+  }
+
+  .SHADOW_BORDER {
+    @apply shadow-lg border rounded-lg border-[#add8e64d] shadow-[#000] p-4;
+  }
+
+  .BUTTON {
+    @apply rounded-lg text-center px-4 py-3 m-2 bg-gray-300 font-bold text-lg text-black hover:bg-gray-800 hover:text-white duration-200;
+  }
+
+  .BORDER {
+    @apply border border-[#add8e64d];
+  }
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #333333cc;
+}
+
+.CONTENT {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 15.625rem;
+}
+
+.CONTENT:hover {
+  background-image: linear-gradient(
+    to right,
+    #0b1a30,
+    rgb(15, 82, 118)
+  ) !important;
+}
