@@ -9,7 +9,7 @@ import {
 } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { Link } from "react-scroll";
-import ResumePDF from "../../ResumePDF/My resume.pdf";
+import ResumePDF from "../../ResumePDF/Resume.pdf";
 
 const NavBar = () => {
   let [nav, setNav] = useState(false);
