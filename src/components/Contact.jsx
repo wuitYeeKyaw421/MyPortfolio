@@ -39,7 +39,7 @@ const Contact = () => {
           <p className="mt-8">Submit the form below and send me an email.</p>
         </div>
         <input
-          className="bg-gray-300 p-2 text-black"
+          className="border-none outline-none bg-gray-300 p-2 text-black"
           placeholder="Name"
           type="text"
           name="user_name"
