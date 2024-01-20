@@ -12,7 +12,7 @@ const Skills = () => {
   return (
     <div
       name="skills"
-      className="w-full scroll-m-[10rem] BORDER_BOTTOM bg-[#0b1a30] text-[lightblue]"
+      className="w-full scroll-m-[10rem] BORDER_BOTTOM LIGHT DARK"
     >
       {/* ===== CONTAINER ===== */}
       <div className="max-w-[63rem] mx-auto p-4 flex flex-col justify-center w-full h-full">
@@ -51,7 +51,7 @@ const Skills = () => {
           </div>
 
           <div className="SHADOW_BORDER">
-            <FaGithub className="text-[#fff] text-7xl mx-auto" />
+            <FaGithub className="dark:text-[#fff] text-[#222] text-7xl mx-auto" />
             <p className="pt-4">GitHub</p>
           </div>
         </div>

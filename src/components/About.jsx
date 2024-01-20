@@ -2,7 +2,7 @@ const About = () => {
   return (
     <div
       name="about"
-      className="BORDER_BOTTOM w-full scroll-m-16 h-screen bg-[#0b1a30] text-[lightblue]"
+      className="BORDER_BOTTOM w-full scroll-m-16 h-screen LIGHT DARK"
     >
       <div className="flex flex-col justify-center items-center w-full- h-full">
         <div className="px-4">
@@ -10,11 +10,11 @@ const About = () => {
             <p className="HEADER_UNDERLINE">About</p>
           </div>
         </div>
-        <div className="max-w-[63rem] w-full grid sm:grid-cols-2 gap-8 px-6">
-          <div className="sm:text-right text-3xl font-bold">
+        <div className="max-w-[63rem] w-full grid sm:grid-cols-2 gap-6 px-6">
+          <div className="sm:text-right sm:text-3xl text-2xl font-bold">
             <p>Hi, it's great to meet you. Please explore my portfolio.</p>
           </div>
-          <div>
+          <div className="dark:text-[#add8e6b3] text-blue-900">
             <p>
               I'm an entry level web developer passionate about crafting
               seamless digital experiences.My journey began with a fascination

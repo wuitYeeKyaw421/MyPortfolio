@@ -6,15 +6,15 @@ import weatherImg from "../assets/WeatherIMG.jpg";
 
 const Projects = () => {
   return (
-    <div
-      name="projects"
-      className="text-[lightblue] w-full bg-[#0b1a30] BORDER_BOTTOM"
-    >
+    <div name="projects" className="LIGHT DARK w-full BORDER_BOTTOM">
       <div className="max-w-[63rem] mx-auto p-4 flex flex-col justify-center w-full h-full text-center">
-        <div className="pb-6">
+        <div className="pb-8">
           <p className="HEADER_UNDERLINE">Projects</p>
-          <p className="py-6 text-xl">Look at some of my recent projects.</p>
+          <p className="mt-8 text-xl sm:text-2xl dark:text-[#add8e6b3] text-blue-900">
+            Look at some of my recent projects.
+          </p>
         </div>
+
         {/* ===== CONTAINER ===== */}
         <div className="p-4 grid sm:grid-cols-2 md:grid-cols-3 gap-8">
           {/* ===== ITEMS ===== */}
@@ -25,7 +25,7 @@ const Projects = () => {
             className="SHADOW_BORDER p-4 group container rounded-md flex justify-center items-center mx-auto CONTENT"
           >
             {/* ===== SECTION FOR HOVER ===== */}
-            <div className="opacity-0 group-hover:opacity-100">
+            <div className="opacity-0 group-hover:opacity-100 group-focus:opacity-100">
               <span className="text-2xl font-bold text-white tracking-wider">
                 Music Player Example
               </span>
@@ -53,7 +53,7 @@ const Projects = () => {
             className="SHADOW_BORDER p-4 group container rounded-md flex justify-center items-center mx-auto CONTENT"
           >
             {/* ===== SECTION FOR HOVER ===== */}
-            <div className="opacity-0 group-hover:opacity-100">
+            <div className="opacity-0 group-hover:opacity-100 group-focus:opacity-100">
               <span className="text-2xl font-bold text-white tracking-wider">
                 Shopping Cart Project
               </span>
@@ -81,7 +81,7 @@ const Projects = () => {
             className="SHADOW_BORDER p-4 group container rounded-md flex justify-center items-center mx-auto CONTENT"
           >
             {/* ===== SECTION FOR HOVER ===== */}
-            <div className="opacity-0 group-hover:opacity-100">
+            <div className="opacity-0 group-hover:opacity-100 group-focus:opacity-100">
               <span className="text-2xl font-bold text-white tracking-wider">
                 Stop Watch
               </span>
@@ -109,7 +109,7 @@ const Projects = () => {
             className="SHADOW_BORDER p-4 group container rounded-md flex justify-center items-center mx-auto CONTENT"
           >
             {/* ===== SECTION FOR HOVER ===== */}
-            <div className="opacity-0 group-hover:opacity-100">
+            <div className="opacity-0 group-hover:opacity-100 group-focus:opacity-100">
               <span className="text-2xl font-bold text-white tracking-wider">
                 React Weather App
               </span>
@@ -138,7 +138,7 @@ const Projects = () => {
             className="SHADOW_BORDER p-4 group container rounded-md flex justify-center items-center mx-auto CONTENT"
           >
             {/* ===== SECTION FOR HOVER ===== */}
-            <div className="opacity-0 group-hover:opacity-100">
+            <div className="opacity-0 group-hover:opacity-100 group-focus:opacity-100">
               <span className="text-2xl font-bold text-white tracking-wider">
                 Note
               </span>

@@ -11,12 +11,8 @@
 }
 
 @layer components {
-  .GRID_CONTAINER {
-    @apply max-w-[63rem] w-full grid grid-cols-2 gap-8;
-  }
-
   .BORDER_BOTTOM {
-    @apply border-b-[1px] border-[tomato];
+    @apply border-b-[3px] dark:border-[tomato] border-red-900;
   }
 
   .HEADER_UNDERLINE {
@@ -24,7 +20,7 @@
   }
 
   .SHADOW_BORDER {
-    @apply shadow-lg border rounded-lg border-[#add8e64d] shadow-[#000] p-4;
+    @apply shadow-lg border-[2px] rounded-lg dark:border-[#add8e64d] border-[#000000] shadow-[#333] p-4;
   }
 
   .BUTTON {
@@ -32,13 +28,20 @@
   }
 
   .BORDER {
-    @apply border border-[#add8e64d];
+    @apply border-[1.5px] dark:border-[#add8e680] border-[#000000];
   }
-}
 
-input::placeholder,
-textarea::placeholder {
-  color: #333333cc;
+  .LIGHT {
+    @apply bg-slate-300 text-[#0b1a30];
+  }
+
+  .DARK {
+    @apply dark:bg-[#0b1a30] dark:text-[lightblue];
+  }
+
+  .PLACEHOLDER {
+    @apply placeholder-slate-200 dark:placeholder-black;
+  }
 }
 
 .CONTENT {
