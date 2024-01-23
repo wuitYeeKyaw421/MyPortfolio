@@ -1,3 +1,5 @@
+import { FaAngleDoubleDown } from "react-icons/fa";
+
 const Home = () => {
   return (
     <div name="home" className="BORDER_BOTTOM w-full h-screen LIGHT DARK">
@@ -15,7 +17,11 @@ const Home = () => {
           practical application in HTML, CSS, JavaScript, React, Tailwind CSS,
           Git, and GitHub.
         </p>
-        <p></p>
+      </div>
+      <div className="absolute bottom-16 w-full flex justify-center">
+        <div className="text-4xl p-2 rounded-full animate-bounce bg-[#0b1a3040] dark:bg-[#ffffff40]">
+          <FaAngleDoubleDown />
+        </div>
       </div>
     </div>
   );
