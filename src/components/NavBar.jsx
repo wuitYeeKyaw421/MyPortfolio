@@ -10,8 +10,8 @@ import {
 } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { CiDark, CiLight } from "react-icons/ci";
-import { Link } from "react-scroll";
 import ResumePDF from "../../ResumePDF/Resume.pdf";
+import { Link } from "react-scroll";
 
 const NavBar = () => {
   let [nav, setNav] = useState(false);
@@ -41,7 +41,7 @@ const NavBar = () => {
   };
 
   return (
-    <div className="BORDER_BOTTOM fixed w-full h-20 flex justify-between items-center px-4 bg-[#fff] dark:bg-[#111] text-black  dark:text-[lightblue] font-bold">
+    <div className="z-10 BORDER_BOTTOM fixed w-full h-20 flex justify-between items-center px-4 bg-[#fff] dark:bg-[#111] text-black  dark:text-[lightblue] font-bold">
       <div>
         <img
           src={icon}
@@ -104,22 +104,22 @@ const NavBar = () => {
           onClick={handleClick}
           className="text-4xl absolute top-6 right-4 cursor-pointer"
         />
-        <li className="py-6 text-4xl">
+        <li className="py-6 text-3xl">
           <Link onClick={handleClick} to="home" smooth={true} duration={500}>
             Home
           </Link>
         </li>
-        <li className="py-6 text-4xl">
+        <li className="py-6 text-3xl">
           <Link onClick={handleClick} to="about" smooth={true} duration={500}>
             About
           </Link>
         </li>
-        <li className="py-6 text-4xl">
+        <li className="py-6 text-3xl">
           <Link onClick={handleClick} to="skills" smooth={true} duration={500}>
             Skills
           </Link>
         </li>
-        <li className="py-6 text-4xl">
+        <li className="py-6 text-3xl">
           <Link
             onClick={handleClick}
             to="projects"
@@ -129,12 +129,12 @@ const NavBar = () => {
             Projects
           </Link>
         </li>
-        <li className="py-6 text-4xl">
+        <li className="py-6 text-3xl">
           <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
             Contact
           </Link>
         </li>
-        <li className="text-4xl py-6 flex justify-center items-center">
+        <li className="text-3xl py-6 flex justify-center items-center">
           {theme === "dark" ? (
             <div
               onClick={handleThemeSwitch}
@@ -164,12 +164,12 @@ const NavBar = () => {
       </ul>
 
       {/* ===== SOCIAL LINKS ICONS ===== */}
-      <div className="font-bold flex flex-col fixed top-20 left-0">
+      <div className="font-bold md:flex flex-col fixed top-20 left-0 hidden">
         <ul className="flex flex-col gap-4">
-          <li className="w-36 h-8 flex justify-between items-center ml-[-6.25rem] hover:ml-[-0.625rem] duration-300 dark:bg-[#33333380] bg-[#ffffff80] BORDER">
+          <li className="w-36 h-8 flex items-center ml-[-6rem] hover:ml-[-0.625rem] duration-300 dark:bg-[#33333380] bg-[#ffffff80] BORDER">
             <a
               href="https://github.com/wuitYeeKyaw421"
-              className="flex justify-between items-center dark:text-white w-full text-black"
+              className="flex justify-between dark:text-white w-full text-black"
               target="_blank"
             >
               GitHub
@@ -177,11 +177,11 @@ const NavBar = () => {
             </a>
           </li>
 
-          <li className="w-36 h-8 flex justify-between items-center ml-[-6.25rem] hover:ml-[-0.625rem] duration-300 dark:bg-[#003d9880] bg-[#ffffff80] BORDER">
+          <li className="w-36 h-8 flex items-center ml-[-6rem] hover:ml-[-0.625rem] duration-300 dark:bg-[#003d9880] bg-[#ffffff80] BORDER">
             <a
               href="
               https://www.facebook.com/profile.php?id=100091939640260&mibextid=ZbWKwL"
-              className=" flex justify-between items-center dark:text-white w-full text-[#003d98]"
+              className="flex justify-between dark:text-white w-full text-[#003d98]"
               target="_blank"
             >
               Facebook
@@ -189,10 +189,10 @@ const NavBar = () => {
             </a>
           </li>
 
-          <li className="w-36 h-8 flex justify-between items-center ml-[-6.25rem] hover:ml-[-0.625rem] duration-300 dark:bg-[#530b2080] bg-[#ffffff80] BORDER">
+          <li className="w-36 h-8 flex items-center ml-[-6rem] hover:ml-[-0.625rem] duration-300 dark:bg-[#530b2080] bg-[#ffffff80] BORDER">
             <a
               href="https://www.instagram.com/sakuroyoshina45?igsh=eTIjc2dwendhcGJx"
-              className=" flex justify-between items-center dark:text-white w-full text-[#530b20]"
+              className="flex justify-between dark:text-white w-full text-[#530b20]"
               target="_blank"
             >
               Instagram
@@ -200,24 +200,25 @@ const NavBar = () => {
             </a>
           </li>
 
-          <li className="w-36 h-8 flex justify-between items-center ml-[-6.25rem] hover:ml-[-0.625rem] duration-300 dark:bg-[#12434680] bg-[#ffffff80] BORDER">
-            <a
-              href={ResumePDF}
-              className="flex justify-between items-center dark:text-white w-full text-[#124346]"
-              target="_blank"
-            >
-              Resume
-              <BsFillPersonLinesFill className="text-2xl" />
-            </a>
-          </li>
-          <li className="w-36 h-8 flex justify-between items-center ml-[-6.25rem] hover:ml-[-0.625rem] duration-300 dark:bg-[#106cbb80] bg-[#ffffff80] BORDER">
+          <li className="w-36 h-8 flex items-center ml-[-6rem] hover:ml-[-0.625rem] duration-300 dark:bg-[#106cbb80] bg-[#ffffff80] BORDER">
             <a
               href="https://www.linkedin.com/in/wuit-yee-kyaw-379424291/"
-              className="flex justify-between items-center dark:text-white w-full text-[#106cbb]"
+              className="flex justify-between dark:text-white w-full text-[#106cbb]"
               target="_blank"
             >
               LinkedIn
               <FaLinkedin className="text-2xl" />
+            </a>
+          </li>
+
+          <li className="w-36 h-8 flex items-center ml-[-6rem] hover:ml-[-0.625rem] duration-300 dark:bg-[#12434680] bg-[#ffffff80] BORDER">
+            <a
+              href={ResumePDF}
+              className="flex justify-between dark:text-white w-full text-[#124346]"
+              target="_blank"
+            >
+              Resume
+              <BsFillPersonLinesFill className="text-2xl" />
             </a>
           </li>
         </ul>
